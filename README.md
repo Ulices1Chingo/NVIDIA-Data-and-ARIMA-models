@@ -1,23 +1,15 @@
 # NVIDIA-Data-and-ARIMA-models
-Based on the provided Jupyter notebook and the stated objectives, I'll analyze the work done to predict NVDA stock prices using three different models (ARIMA, LSTM, and CNN) and provide recommendations for improvement.
+Based on the provided Jupyter notebook and the stated objectives, I'll analyze the work done to predict NVDA stock prices using three different models (ARIMA, LSTM, and CNN) with some varations of ARIMA such as ARIMAX, and provide recommendations for improvement.
 
-Current Implementation Analysis
-The notebook shows a partial implementation focusing on LSTM modeling for NVDA stock price prediction from January to June 2023. Key observations:
-
+## Current Implementation Analysis
+The notebook shows a partial implementation focusing on ARIMA models for NVDA stock price prediction from January to June 2023. 
 Data Collection & Preparation:
-
 The notebook loads historical NVDA stock price data from a CSV file
-
 Focuses on the 'close' price column
-
 Uses MinMaxScaler for normalization
-
 Splits data into training (80%) and test sets
-
 LSTM Model Implementation:
-
 Creates sequences with a window size of 60 timesteps
-
 Builds a simple LSTM model with 50 units and a dense output layer
 
 Trains for 20 epochs with batch size 32
